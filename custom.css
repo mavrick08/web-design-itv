@@ -1,0 +1,18 @@
+h3{
+    color:orange;
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    font-style:italic;
+    
+}
+
+p{
+    color:rgb(17, 16, 16);
+    font-size: 15px;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+    /* font-weight: bold; */
+    /* text-decoration:line-through; */
+    
+    
+}
