@@ -1,0 +1,9 @@
+Fonts used in this design:
+
+Font: Poppins
+Author: Indian Type Foundry,Jonny Pinhorn
+Url: https://fonts.google.com/specimen/Poppins
+
+Font: Sniglet
+Author: Haley Fiege
+Url: https://fonts.google.com/specimen/Sniglet

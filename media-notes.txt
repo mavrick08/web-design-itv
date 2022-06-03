@@ -1,0 +1,14 @@
+width : greater than 1280px ==> 
+
+laptop,desktop,monitors,ipad pro ===> 1025 px
+
+
+potrait tables --- minimum 768px and max 1024 px
+
+landscape tablets --> minimum 768 and max 1024
+
+mobiles --- minimum 480px and max 765 px
+
+
+low size sp --> min 320 and max 480px
+

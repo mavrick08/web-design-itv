@@ -1,0 +1,14 @@
+.body{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.title{
+    color:red;
+}
+
+@media (max-width:500px){
+    .title{
+        color: blue;
+    }
+    
+}
