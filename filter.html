@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>JavaScript Map Example.</h3>
+    <p id="demo"></p>
+
+    <script>
+        var num = [10,20,30,40,50];
+        var filter_num = num.filter(my_filter)
+        document.getElementById('demo').innerHTML = filter_num;
+
+        function my_filter(value,index,array){
+            return value > 30;
+        }
+
+    </script>
+
+</body>
+</html>

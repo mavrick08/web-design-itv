@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map Example</title>
+</head>
+<body>
+    <h3>JavaScript Map Example.</h3>
+    <p id="demo"></p>
+
+    <script>
+        var arr1 = [10,20,30,40,50];
+        var arr2 = arr1.map(multiply)
+        document.getElementById('demo').innerHTML = arr2;
+
+        function multiply(value,index,array)
+        {
+            return value*2;
+        }
+    </script>
+
+</body>
+</html>
