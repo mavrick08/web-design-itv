@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example 3 - OOP with Method</title>
+</head>
+<body>
+    <p id="demo"></p>
+
+
+    <script>
+        class Student{
+            constructor(name,year){
+                this.name = name;
+                this.year = year;
+            }
+
+            calc_age(){
+                let date = new Date();
+                return date.getFullYear() - this.year;
+            }
+        }
+
+        let stu1 = new Student("Punit",2017);
+        document.getElementById('demo').innerHTML = stu1.name+" is in the college since "+stu1.calc_age()+" years ";
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Data</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+
+    <input type="text" name="Name" id="full_name" placeholder="Enter Name">
+    <br/><br/>
+    <input type="text" name="age" id="your_age" placeholder="Enter Your Age">
+    <br/><br/>
+    <button class="btn">Click Here</button>
+    
+    
+    <script>
+        $(document).ready(function(){
+            $(".btn").click(function(){
+                var name = document.getElementById('full_name').value;
+                var age = document.getElementById('your_age').value;
+                alert(name);
+                alert(age);
+            });
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Example</title>
+</head>
+<body>
+    <h3>Example of Class in Java Script</h3>
+    <p id="demo"></p>
+
+    <script>
+       class Employee{
+           constructor(emp_id,emp_name,emp_designation){
+               this.emp_id = emp_id;
+               this.emp_name = emp_name;
+               this.emp_designation = emp_designation
+           }
+       }
+       emp1 = new Employee(101,"Good coder","SDE");
+       document.getElementById('demo').innerHTML = emp1.emp_id+" "+emp1.emp_name+" "+emp1.emp_designation;
+       
+       
+    </script>
+</body>
+</html>
