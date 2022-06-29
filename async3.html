@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example 3</title>
+</head>
+<body>
+    <p id="demo">Hello</p>
+
+    <script>
+        async function getWebFile(){
+            let myPromise = new Promise(function(resolve){
+                let request = new XMLHttpRequest();
+                request.open('GET','boot_table.html');
+                request.onload = function(){
+                    if(request.status == 200)
+                    {
+                        resolve(request.response);
+                    }
+                    else{
+                        resolve("File is not available");
+                    }
+                };
+                request.send();
+            });
+            document.getElementById("demo").innerHTML = await myPromise;
+        }
+        getWebFile();
+    </script>
+</body>
+</html>

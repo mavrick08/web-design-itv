@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript DOM Example</title>
+</head>
+<body>
+    <p>This is Line 1</p>
+    <p>This is Line 2</p>
+    <p>This is Line 3</p>
+
+    <h4 id="output"></h4>
+
+    <script>
+        data = document.getElementsByTagName('p');    
+        document.getElementById('output').innerHTML = data[2].innerHTML;
+    </script>
+
+</body>
+</html>

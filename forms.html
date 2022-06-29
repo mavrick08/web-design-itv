@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Example</title>
+
+    <script>
+        function validateFormExample(){
+            //let name = document.forms['myform']['fname'].value;
+            let name = document.getElementById('f_name').value;
+            if (name == ""){
+                alert('Name is not filled Try Again');
+                return False;
+            }
+
+            else{
+                alert(name);
+            }
+        }
+    </script>
+
+</head>
+<body>
+    
+    <form name="myform" action="demo.php" onsubmit="validateFormExample()" method="post">
+        Name:<input type="text" name="fname" id="f_name">
+
+        <input type="submit" value="Submit">
+
+    </form>
+
+
+</body>
+</html>

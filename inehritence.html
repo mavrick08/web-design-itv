@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inheritence Example</title>
+</head>
+<body>
+    <p id="demo"></p>
+
+    <script>
+        class Car{
+            constructor(car_brand){
+                this.car_brand = car_brand;
+            }
+
+            car_detail(){
+                return 'I am currenly having '+this.car_brand;
+            }
+        }
+
+        class Model extends Car{
+            constructor(car_brand,model_name){
+                super(car_brand);
+                this.model_name = model_name;
+            }
+
+            model_detail(){
+                return this.car_detail()+'  Model Name is '+this.model_name;
+            }
+        }
+
+        let c1 = new Model('Tata','Safari');
+        document.getElementById('demo').innerHTML = c1.model_detail();
+    </script>
+    
+</body>
+</html>
